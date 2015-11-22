@@ -28,10 +28,7 @@
 					var chartSeries = [];
 					var options = {
 						axisY: {
-							offset: 80,
-							labelInterpolationFnc: function(value) {
-								return value + ' php';
-							}
+							offset: 80
 						},
 						series: {
 							'data': {lineSmooth: Chartist.Interpolation.none()},
