@@ -1,0 +1,20 @@
+@import "partials/colors";
+
+html, body, .ui.input input, .ui.button,
+.ui.statistic > .label, .ui.statistics .statistic > .label,
+.ui.statistic > .value, .ui.statistics .statistic > .value {
+	font-family: Roboto,"Helvetica Neue",Lato,Arial,Helvetica,sans-serif;
+	color: $gs7;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, .ui.header, .ui.sub.header {
+	font-family: "Titillium Web",sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: $gs7;
+
+	&.highlight, .highlight {
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="app" class="no-js" lang="en">
+	<head>
+	<title ng-bind="$title + ' » Open Data Platform'"></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles/normalize.css">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="assets/styles/app.css"> -->
+		<!--
+			Temporarily use manager.php to rebuild Sass every page refresh.
+			Switch back to using app.css for production.
+		-->
+		<link rel="stylesheet" type="text/css" href="assets/styles/manager.php?action=autocycle">
+	</head>
+	<body>
+		<!-- start content -->
+		<section id="content">
+			<ui-view autoscroll="true">
+			</ui-view>
+		</section>
+		<!-- end content -->
+
+
+		<!-- dependencies -->
+		<script type="text/javascript" src="vendor/angular.min.js"></script>
+		<script type="text/javascript" src="vendor/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="vendor/angular-ui-router-title.js"></script>
+		<script type="text/javascript" src="vendor/underscore-min.js"></script>
+		<script type="text/javascript" src="vendor/restangular.min.js"></script>
+		<script type="text/javascript" src="vendor/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="vendor/chartist.min.js"></script>
+		<script type="text/javascript" src="vendor/semantic/semantic.min.js"></script>
+
+		<!-- angular stuff -->
+		<script type="text/javascript" src="app/app.js"></script>
+
+		<script type="text/javascript" src="app/states/home/home.js"></script>
+		<script type="text/javascript" src="app/states/data/data.js"></script>
+		<script type="text/javascript" src="app/states/about/about.js"></script>
+		<script type="text/javascript" src="app/states/dataset/dataset.js"></script>
+		<script type="text/javascript" src="app/states/resource/resource.js"></script>
+
+		<script type="text/javascript" src="app/services/resourceService.js"></script>
+		<script type="text/javascript" src="app/services/datasetService.js"></script>
+		<script type="text/javascript" src="app/services/categoryService.js"></script>
+		<script type="text/javascript" src="app/services/departmentService.js"></script>
+		<script type="text/javascript" src="app/services/searchService.js"></script>
+
+		<script type="text/javascript" src="app/directives/topMenu/topMenu.js"></script>
+		<script type="text/javascript" src="app/directives/headerNav/headerNav.js"></script>
+		<script type="text/javascript" src="app/directives/footerSection/footerSection.js"></script>
+		<script type="text/javascript" src="app/directives/statOverview/statOverview.js"></script>
+		<script type="text/javascript" src="app/directives/latestData/latestData.js"></script>
+		<script type="text/javascript" src="app/directives/latestNews/latestNews.js"></script>
+		<script type="text/javascript" src="app/directives/datasetPanel/datasetPanel.js"></script>
+		<script type="text/javascript" src="app/directives/newsPanel/newsPanel.js"></script>
+		<script type="text/javascript" src="app/directives/resourcePanel/resourcePanel.js"></script>
+
+		<script type="text/javascript" src="vendor/dirDisqus.js"></script>
+
+		<!-- load webfonts -->
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,700|Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	</body>
+</html>

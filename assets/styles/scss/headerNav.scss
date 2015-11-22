@@ -1,0 +1,37 @@
+@import "partials/colors";
+
+header-nav > section.inverted.content {
+	position: relative;
+	background: #060606 url("../img/bg-dark.png") repeat;
+	background-position: 0px 0px;
+	color: $gs2;
+	border-bottom: 1px solid $gs5;
+	height: 250px;
+	box-shadow: 0 -50px 75px #060606 inset;
+
+	.ui.menu {
+		position: absolute;
+		left: 0%;
+		bottom: 0%;
+		width: 100%;
+
+		.item {
+			font-family: "Titillium Web", sans-serif;
+			font-size: 18px;
+			font-weight: 400;
+			text-align: center;
+			text-transform: uppercase;
+			padding: 24px 20px;
+			margin: 0;
+			border-radius: 0;
+			text-shadow: 0 0 5px rgba($gs1, 0.15);
+			letter-spacing: 1px;
+			transition: all 0.25s ease;
+
+			&:hover {
+				text-shadow: 0 2px 10px rgba($gs1, 0.5);
+				background: none;
+			}
+		}
+	}
+}

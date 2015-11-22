@@ -1,0 +1,87 @@
+[
+	{
+		"title":"2009",
+		"data":[
+			{"Month":"January", "amount":"55"},
+			{"Month":"February", "amount":"55"},
+			{"Month":"March", "amount":"54"},
+			{"Month":"April", "amount":"53"},
+			{"Month":"May", "amount":"50"},
+			{"Month":"June", "amount":"52"},
+			{"Month":"July", "amount":"54"},
+			{"Month":"August", "amount":"0"},
+			{"Month":"September", "amount":"0"},
+			{"Month":"October", "amount":"0"},
+			{"Month":"November", "amount":"0"},
+			{"Month":"December", "amount":"0"}
+		]
+	},
+	{
+		"title":"2010",
+		"data":[
+			{"Month":"January", "amount":"58"},
+			{"Month":"February", "amount":"58"},
+			{"Month":"March", "amount":"58"},
+			{"Month":"April", "amount":"59"},
+			{"Month":"May", "amount":"58"},
+			{"Month":"June", "amount":"58"},
+			{"Month":"July", "amount":"57"},
+			{"Month":"August", "amount":"55"},
+			{"Month":"September", "amount":"56"},
+			{"Month":"October", "amount":"56"},
+			{"Month":"November", "amount":"55"},
+			{"Month":"December", "amount":"55"}
+		]
+	},
+	{
+		"title":"2011",
+		"data":[
+			{"Month":"January", "amount":"66"},
+			{"Month":"February", "amount":"65"},
+			{"Month":"March", "amount":"66"},
+			{"Month":"April", "amount":"61"},
+			{"Month":"May", "amount":"60"},
+			{"Month":"June", "amount":"61"},
+			{"Month":"July", "amount":"56"},
+			{"Month":"August", "amount":"54"},
+			{"Month":"September", "amount":"54"},
+			{"Month":"October", "amount":"54"},
+			{"Month":"November", "amount":"56"},
+			{"Month":"December", "amount":"58"}
+		]
+	},
+	{
+		"title":"2012",
+		"data":[
+			{"Month":"January", "amount":"74"},
+			{"Month":"February", "amount":"74"},
+			{"Month":"March", "amount":"75"},
+			{"Month":"April", "amount":"75"},
+			{"Month":"May", "amount":"74"},
+			{"Month":"June", "amount":"76"},
+			{"Month":"July", "amount":"75"},
+			{"Month":"August", "amount":"77"},
+			{"Month":"September", "amount":"62"},
+			{"Month":"October", "amount":"62"},
+			{"Month":"November", "amount":"66"},
+			{"Month":"December", "amount":"67"}
+		]
+	},
+	{
+		"title":"2013",
+		"data":[
+			{"Month":"January", "amount":"79"},
+			{"Month":"February", "amount":"79"},
+			{"Month":"March", "amount":"79"},
+			{"Month":"April", "amount":"78"},
+			{"Month":"May", "amount":"77"},
+			{"Month":"June", "amount":"79"},
+			{"Month":"July", "amount":"79"},
+			{"Month":"August", "amount":"77"},
+			{"Month":"September", "amount":"76"},
+			{"Month":"October", "amount":"74"},
+			{"Month":"November", "amount":"76"},
+			{"Month":"December", "amount":"75"}
+		]
+	}
+]

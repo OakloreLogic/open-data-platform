@@ -1,0 +1,76 @@
+@import "partials/colors";
+
+body {
+	background: $gs2;
+}
+
+section#content {
+	background: $gs1;
+}
+
+footer {
+	background: $gs2;
+	margin-top: 5rem;
+	height: 150px;
+	border-top: 1px solid $gs3;
+}
+
+section.content {
+	input.case.insensitive {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.panel.header {
+		.content {
+			display: inline-block;
+			position: relative;
+			background: $gs1;
+			padding: 0 1rem;
+			margin-top: 1rem;
+			margin-bottom: 0.5rem;
+
+			&:after {
+				content: " ";
+				position: absolute;
+				bottom: -12px;
+				left: 1rem;
+				height: 6px;
+				width: 25%;
+				background: $hl1;
+			}
+		}
+	}
+
+	.ui.segments {
+		background: $gs0;
+		border: 1px solid $gs2;
+		border-radius: 0;
+		box-shadow: 0 5px 10px rgba($gs2,0.25);
+
+		&.metainfo {
+			.label {
+				font-family: Roboto, sans-serif;
+				font-size: 10px;
+				color: $gs4;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+
+			.content {
+				font-family: Roboto, sans-serif;
+				font-weight: 700;
+				color: $gs7;
+				text-align: justify;
+				text-indent: 1em;
+			}
+		}
+	}
+
+	dataset-panel:last-child:after,
+	resource-panel:last-child:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}

@@ -1,0 +1,26 @@
+@import "partials/colors";
+
+.data-state > section.content {
+	padding-top: 60px;
+
+	.subheader {
+		padding-top: 40px;
+		background: #060606 url("../img/bg-dark.png") repeat;
+		background-position: 0px 0px;
+		box-shadow: 0 -5px 15px #060606 inset;
+		margin-bottom: 3rem;
+
+		.header.item {
+			font-family: Roboto, sans-serif;
+			font-size: 24px;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+
+		.ui.input input {
+			background: $gs5;
+			color: $gs1;
+			border: none;
+		}
+	}
+}

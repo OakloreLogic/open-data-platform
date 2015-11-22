@@ -1,0 +1,75 @@
+@import "partials/colors";
+
+.home-state {
+	header {
+		border-bottom: 1px solid $gs5;
+		padding: 3rem;
+		background: transparent url("../img/masthead-bg.svg") no-repeat center right;
+	}
+
+	.brand-card {
+		position: relative;
+
+		.logo img {
+			width: 100px;
+			line-height: 100px;
+		}
+
+		.name .title {
+			position: absolute;
+			bottom: 40px;
+			left: 120px;
+			text-transform: uppercase;
+			font-family: "Titillium Web", sans-serif;
+			font-weight: 300;
+			font-size: 48px;
+			line-height: 54px;
+
+			.highlight {
+				font-weight: 700;
+			}
+		}
+
+		.name .subtitle {
+			position: absolute;
+			top: 60px;
+			left: 120px;
+			text-transform: uppercase;
+			font-size: 18px;
+			line-height: 24px;
+			letter-spacing: 2px;
+			color: $gs4;
+		}
+	}
+
+	section.content {
+		padding-bottom: 3rem;
+
+		.ui.statistics {
+			border-bottom: 1px solid $gs2;
+			margin-bottom: 3rem;
+
+			.statistic {
+				width: 25%;
+				margin: 0;
+
+				.value {
+					font-family: "Titillium Web", sans-serif;
+					font-size: 2.5rem;
+					font-weight: 700;
+				}
+
+				.label {
+					font-family: Roboto, sans-serif;
+					font-size: 0.8rem;
+					font-weight: 400;
+					letter-spacing: 0.1rem;
+				}
+			}
+		}
+		.ui.input {
+			margin-top: 1rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+}

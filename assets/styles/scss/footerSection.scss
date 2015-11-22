@@ -1,0 +1,24 @@
+@import "partials/colors";
+
+footer {
+	ul {
+		h1 {
+			font-size: 1rem;
+		} 
+		li {
+			font-size: 0.95rem;
+			list-style-type: none;
+			a {
+				color: $gs4;
+			}
+			a:hover {
+				color: $gs5;
+				transition: all, 0.25s, ease;
+			}
+		}
+	}
+	#cc {
+		text-align: center;
+		opacity: 0.5;
+	}
+}

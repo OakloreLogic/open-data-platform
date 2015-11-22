@@ -1,0 +1,88 @@
+@import "partials/colors";
+
+resource-panel > .ui.basic.segment {
+	position: relative;
+	border: 1px solid $gs2;
+	width: 240px;
+	height: 300px;
+	float: left;
+	padding-top: 6px;
+	margin: 10px;
+	box-shadow: 0 0px 5px rgba($gs2, 0);
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 0.25s ease;
+
+	&:hover {
+		background: $gs0;
+		box-shadow: 0 3px 10px rgba($gs2, 0.5);
+
+		.label:after {
+			background: $gs1;
+		}
+
+		.resource.name {
+			color: $gs6;
+		}
+
+		.resource.source {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
+
+	.label {
+		position: relative;
+		font-family: Roboto, sans-serif;
+		font-size: 10px;
+		line-height: 10px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: $hl1;
+		clear: both;
+
+		&:after {
+			content: " ";
+			position: absolute;
+			bottom: -4px;
+			left: 0;
+			height: 2px;
+			width: 60%;
+			background: $gs2;
+			transition: all 0.25s ease;
+		}
+	}
+
+	.resource.name {
+		margin-top: 6px;
+		font-family: "Titillium Web", sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $gs7;
+		transition: all 0.25s ease;
+	}
+
+	.resource.source {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 1rem;
+		font-family: Roboto, sans-serif;
+		font-size: 10px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: $gs4;
+		background: $gs1;
+		opacity: 0;
+		transform: translateY(30px);
+		transition: all 0.25s ease, transform 0.5s cubic-bezier(.21,.71,.42,.98);
+
+		.highlight {
+			font-weight: 700;
+			font-size: 14px;
+		}
+	}
+}

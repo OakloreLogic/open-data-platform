@@ -1,0 +1,23 @@
+@import "partials/colors";
+
+.dataset-state > section.content {
+	padding-top: 160px;
+
+	.ui.resources.segments {
+		.ui.sub.header {
+			position: relative;
+			font-weight: 700;
+			color: $gs4;
+
+			&:after {
+				content: " ";
+				position: absolute;
+				bottom: -4px;
+				left: 0;
+				height: 2px;
+				width: 50%;
+				background: $gs4;
+			}
+		}
+	}
+}

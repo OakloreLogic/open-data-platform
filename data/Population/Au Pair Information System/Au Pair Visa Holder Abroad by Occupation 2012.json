@@ -1,0 +1,26 @@
+[
+	{
+		"title":"Employed",
+		"data":[
+			{"occupation":"Professional, Technical, and Related Workers", "amount":"84"},
+			{"occupation":"Managerial, Executive, and Administrative Workers", "amount":"7"},
+			{"occupation":"Clerical Workers", "amount":"87"},
+			{"occupation":"Sales Workers", "amount":"35"},
+			{"occupation":"Service Workers", "amount":"102"},
+			{"occupation":"Agriculture, Animal Husbandry, Forestry Workers, and Fishermen", "amount":"0"},
+			{"occupation":"Process, Transport, Equipment Operators, and Laborers", "amount":"23"},
+			{"occupation":"Members of the Armed Forces", "amount":"0"}
+		]
+	},
+	{
+		"title":"Unemployed",
+		"data":[
+			{"occupation":"Housewives", "amount":"6"},
+			{"occupation":"Students", "amount":"30"},
+			{"occupation":"Out of School Youth", "amount":"16"},
+			{"occupation":"Refugees", "amount":"0"},
+			{"occupation":"Unemployed or Not Reporting Any Occupation", "amount":"1383"},
+			{"occupation":"No Response", "amount":"575"}
+		]
+	}
+]

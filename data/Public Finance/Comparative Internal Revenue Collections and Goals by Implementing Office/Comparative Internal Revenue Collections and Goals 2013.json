@@ -1,0 +1,50 @@
+[
+	{
+		"title":"2013 Collection",
+		"data":[
+			{"location":"Calasiao, Pangasinan", "amount":"8051.49"},
+			{"location":"Cordillera Adm. Region", "amount":"3774.66"},
+			{"location":"Tuguegarao, Cagayan", "amount":"5859.96"},
+			{"location":"San Fernando, Pampanga", "amount":"18329.37"},
+			{"location":"Caloocan", "amount":"15872.41"},
+			{"location":"Manila", "amount":"35066.55"},
+			{"location":"Quezon City", "amount":"98102.55"},
+			{"location":"Makati City", "amount":"128077.22"},
+			{"location":"San Pablo City", "amount":"34981.29"},
+			{"location":"Legaspi City", "amount":"6397.00"},
+			{"location":"Iloilo City", "amount":"7235.24"},
+			{"location":"Bacolod City", "amount":"6840.69"},
+			{"location":"Cebu City", "amount":"17285.2"},
+			{"location":"Tacloban City", "amount":"5019.52"},
+			{"location":"Zamboanga City", "amount":"4411.83"},
+			{"location":"Cagayan de Oro City", "amount":"8633.93"},
+			{"location":"Butuan City", "amount":"3445.38"},
+			{"location":"Koronadal City", "amount":"5927.08"},
+			{"location":"Davao City", "amount":"10945.68"}
+		]
+	},
+	{
+		"title":"2013 Goal",
+		"data":[
+			{"location":"Calasiao, Pangasinan", "amount":"9048.11"},
+			{"location":"Cordillera Adm. Region", "amount":"4312.43"},
+			{"location":"Tuguegarao, Cagayan", "amount":"5689.2"},
+			{"location":"San Fernando, Pampanga", "amount":"18768.76"},
+			{"location":"Caloocan", "amount":"17072.15"},
+			{"location":"Manila", "amount":"37017.72"},
+			{"location":"Quezon City", "amount":"106792.81"},
+			{"location":"Makati City", "amount":"135370.4"},
+			{"location":"San Pablo City", "amount":"37597.18"},
+			{"location":"Legaspi City", "amount":"7078.69"},
+			{"location":"Iloilo City", "amount":"8279.44"},
+			{"location":"Bacolod City", "amount":"7998.9"},
+			{"location":"Cebu City", "amount":"19046.13"},
+			{"location":"Tacloban City", "amount":"6059.57"},
+			{"location":"Zamboanga City", "amount":"5008.48"},
+			{"location":"Cagayan de Oro City", "amount":"9486.37"},
+			{"location":"Butuan City", "amount":"4130.35"},
+			{"location":"Koronadal City", "amount":"6670.64"},
+			{"location":"Davao City", "amount":"11794.54"}
+		]
+	}
+]

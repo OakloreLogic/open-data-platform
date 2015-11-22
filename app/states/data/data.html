@@ -1,0 +1,73 @@
+<div class="data-state">
+	<top-menu></top-menu>
+	<section class="content">
+		<div class="subheader">
+			<header class="ui secondary inverted basic menu">
+				<div class="ui container">
+					<div class="header item">Dataset Explorer</div>
+					<div class="right item">
+						<div class="item">
+							<div class="ui icon search input">
+								<i class="search icon"></i>
+								<input case="case insensitive" type="text" placeholder="Quick Search">
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="ui centered grid container">
+			<div class="sixteen wide mobile four wide computer column">
+				<div class="ui basic search segment">
+					<div class="ui fluid icon input">
+						<input class="case insensitive" placeholder="Search" type="text" ng-model="searchQuery" ng-change="updateSearch()">
+						<i class="search icon"></i>
+					</div>
+					<div class="ui sub header">
+						<span class="highlight">Department</span> Filter
+					</div>
+					<div class="ui department fluid multiple search selection dropdown">
+						<input name="departments" type="hidden" ng-model="departmentFilter">
+						<i class="dropdown icon"></i>
+						<div class="default text">Department</div>
+						<div class="menu">
+							<div class="item" ng-repeat="department in departments | orderBy:'department_name'" ng-data-value="department.department_name" ng-click="updateFilter">
+								{{department.department_name}}
+							</div>
+						</div>
+					</div>
+					<div class="ui sub header">
+						<span class="highlight">Category</span> Filter
+					</div>
+					<div class="ui category fluid multiple search selection dropdown">
+						<input name="categories" type="hidden">
+						<i class="dropdown icon"></i>
+						<div class="default text">Category</div>
+						<div class="menu">
+							<div class="item" ng-repeat="category in categories | orderBy:'category_name'" ng-data-value="category.category_name" ng-click="updateFilter">
+								{{category.category_name}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ui sixteen wide mobile twelve wide computer column">
+				<div class="panel header" ng-hide="searchQuery == null">
+					<h3 class="content">
+						Showing results for <span class="highlight">{{searchQuery}}</span>
+					</h3>
+				</div>
+				<div class="panel header" ng-show="searchQuery == null">
+					<h3 class="content">
+						Showing recent datasets
+					</h3>
+				</div>
+				<div class="ui basic segment">
+					<resource-panel ng-repeat="resource in resourceResults | orderBy:'resource_name'"></resource-panel>
+					<dataset-panel ng-repeat="dataset in datasetResults | orderBy:'dataset_name'"></dataset-panel>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer-section></footer-section>
+</div>

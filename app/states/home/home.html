@@ -1,0 +1,64 @@
+<div class="home-state">
+	<header>
+			<div class="ui container">
+				<div class="brand-card">
+					<span class="logo">
+						<img src="assets/img/logo.svg" alt="">
+					</span>
+					<span class="name">
+						<span class="title">
+							<span class="highlight">Open Data</span> Platform
+						</span>
+						<span class="subtitle">
+							A Versatile Platform for Managing and Visualizing Data
+						</span>
+					</span>
+				</div>
+			</div>
+	</header>
+	<header-nav></header-nav>
+	<section class="content">
+		<div class="ui centered grid container">
+			<div class="sixteen wide column">
+				<stat-overview></stat-overview>
+			</div>
+			<div id="search" class="sixteen wide mobile tablet only column">
+				<div class="ui search">
+					<div class="ui fluid icon input">
+						<input class="case insensitive" placeholder="Search" type="text" ng-model="searchQuery">
+						<i class="search icon"></i>
+					</div>
+					<div class="results"></div>
+				</div>
+			</div>
+			<div class="sixteen wide mobile twelve wide computer column">
+				<div class="panel header">
+					<h1 class="content">
+						Latest <span class="highlight">Datasets</span>
+					</h1>
+				</div>
+			</div>
+			<div id="search" class="four wide computer only right floated column">
+				<div class="ui search">
+					<div class="ui fluid icon input">
+						<input class="case insensitive" placeholder="Search" type="text" ng-model="searchQuery">
+						<i class="search icon"></i>
+					</div>
+					<div class="results"></div>
+				</div>
+			</div>
+			<div class="sixteen wide column">
+				<latest-data></latest-data>
+			</div>
+			<div class="sixteen wide column">
+				<div class="panel header">
+					<h1 class="content">
+						Latest <span class="highlight">News</span>
+					</h1>
+				</div>
+				<latest-news></latest-news>
+			</div>
+		</div>
+	</section>
+	<footer-section></footer-section>
+</div>

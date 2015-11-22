@@ -1,0 +1,51 @@
+<div class="dataset-state">
+	<top-menu></top-menu>
+	<section class="content">
+		<div class="ui grid container">
+			<div class="sixteen wide column">
+				<div class="panel header">
+					<h1 class="highlight content">{{dataset.dataset_name}}</h1>
+				</div>
+			</div>
+			<div class="sixteen wide mobile six wide computer column">
+				<div class="ui metainfo segments">
+					<div class="ui basic segment">
+						<div class="label">Description</div>
+						<div class="content">
+							{{dataset.dataset_description}}
+						</div>
+					</div>
+					<div class="ui basic segment">
+						<div class="label">Department</div>
+						<div class="content">
+							{{dataset.dataset_department}}
+						</div>
+					</div>
+					<div class="ui basic segment">
+						<div class="label">Category</div>
+						<div class="content">
+							{{dataset.dataset_category}}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sixteen wide mobile ten wide computer column">
+				<div class="ui resources segments">
+					<div class="ui basic segment">
+						<span class="ui sub header">Resources</span>
+						<div class="ui divider"></div>
+						<resource-panel ng-repeat="resource in dataset.dataset_resources | orderBy:'resource_name'"></resource-panel>
+					</div>
+					<div class="ui divider"></div>
+					<div class="ui basic segment">
+						<dir-disqus disqus-shortname="opendataplatform"
+							disqus-identifier="{{ dataset.dataset_name }}"
+							disqus-url="http://localhost/projects/open-data-platform/#!/dataset/{{ dataset.dataset_id }}">
+						</dir-disqus>
+					</div>
+				</div>
+				</div>
+		</div>
+	</section>
+	<footer-section></footer-section>
+</div>

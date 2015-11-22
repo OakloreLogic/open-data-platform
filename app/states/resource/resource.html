@@ -1,0 +1,47 @@
+<div class="resource-state">
+	<top-menu></top-menu>
+	<section class="content">
+		<div class="ui grid container">
+			<div class="sixteen wide column">
+				<div class="panel header">
+					<h1 class="highlight content">{{resource.resource_name}}</h1>
+				</div>
+			</div>
+			<div class="sixteen wide mobile six wide computer column">
+				<div class="ui metainfo segments">
+					<div class="ui basic segment">
+						<div class="label">Description</div>
+						<div class="content">
+							{{resource.resource_description}}
+						</div>
+					</div>
+					<div class="ui basic segment">
+						<div class="label">Source Dataset</div>
+						<div class="content">
+							{{resource.resource_dataset}}
+						</div>
+					</div>
+					<div class="ui basic segment">
+						<div class="label">Format</div>
+						<div class="content">
+							{{resource.resource_format}}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sixteen wide mobile ten wide computer column">
+				<div class="ui segments">
+					<div class="ui basic segment chart-area"></div>
+					<div class="ui basic segment">
+						<dir-disqus disqus-shortname="opendataplatform"
+							disqus-identifier="{{ resource.resource_name }}"
+							disqus-url="http://localhost/projects/open-data-platform/#!/resource/{{ resource.resource_id }}">
+						</dir-disqus>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer-section></footer-section>
+</div>
+
