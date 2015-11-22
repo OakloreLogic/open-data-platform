@@ -2,4 +2,66 @@
 
 .resource-state > section.content {
 	padding-top: 160px;
+
+	.ct-chart {
+		position: relative;
+
+		.chart.title {
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-family: Roboto, sans-serif;
+			color: $gs7;
+			background: $gs0;
+			padding: 10px 20px;
+			letter-spacing: 1px;
+			z-index: 1000;
+			transition: all 0.5s ease;
+
+			&:after {
+				content: " ";
+				position: absolute;
+				bottom: -2px;
+				left: 0px;
+				height: 2px;
+				width: 50%;
+				background: $gs2;
+			}
+
+			&:hover {
+				opacity: 0;
+				cursor: default;
+			}
+		}
+
+		.ct-series-a .ct-line {
+			stroke: $hl2;
+			stroke-width:3px;
+		}
+
+		.ct-series-a .ct-point {
+			stroke: $hl1;
+			stroke-width:6px;
+		}
+
+		.ct-series-b .ct-line {
+			stroke: $gs3;
+			stroke-width:3px;
+		}
+
+		.ct-series-b .ct-point {
+			stroke: $gs3;
+			stroke-width:0px;
+		}
+
+		.ct-series-c .ct-line {
+			stroke: $gs7;
+			stroke-width:3px;
+		}
+
+		.ct-series-c .ct-point {
+			stroke: $gs6;
+			stroke-width:6px;
+		}
+	}
 }

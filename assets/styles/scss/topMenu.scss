@@ -3,6 +3,7 @@
 top-menu > .ui.secondary.basic.menu {
 	background: $gs0 url("../img/masthead-bg-light.svg") no-repeat center right;
 	border-bottom: 1px solid $gs2;
+	z-index: 100000;
 	transition: all 0.25s ease;
 
 	&.onTop {
